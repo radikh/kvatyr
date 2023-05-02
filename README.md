@@ -33,7 +33,9 @@ Security is important - so please read this text carefully.
 
 The app allows to connect without authentication. It means that when you're on Wi-Fi everyone can get the access to the shared files, same for local network.
 
-The connection is not encrypted and not private, it can be scanned, identified, hijacked, intercepted etc. In short you date is not protected during the transfer. Completely.
+The connection is not encrypted and not private, it can be scanned, identified, hijacked, intercepted etc. 
+
+In short you data is not protected during the transfer. Completely.
 
 ### NAQ:
 
@@ -44,7 +46,7 @@ A: If you wish - do. I just needed something quick and simple for my home networ
 
 Q: How to use it if it's so insecure?
 
-A: I will not give recommendations but I have certain preconditions to run it. Run only on the network I control. The network should not have your hackerman neighbour to sniff your traffic. Run the tool not longer than needed. Don't leave the tool working on the background.  Prepare a separate directory with the files share and run the tool only on that directory.
+A: I will not give recommendations but I have certain preconditions to run it. Run only on the network I control (normally home network or phone hotspot). The network should not have my hackerman neighbour to sniff your traffic. Run the tool not longer than needed. Don't leave the tool working on the background. Prepare a separate directory with the files share and run the tool only on that directory. And still it's not secure, you just need to accept some grade of risk.
 
 
 Q: Will the tool be improved?
