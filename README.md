@@ -1,4 +1,4 @@
-# kvatyr
+# kvatyr [:ukraine:](https://savelife.in.ua/en/donate-en/)
 Primitive file sharing tool that also answers the eternal question "How to share files from Linux to Mac?"
 
 Pros:
@@ -13,7 +13,18 @@ Cons:
  - Primitive as dirt
 
 ### How to use 
-TODO
+As of now no binaries are distributed, so you need to have go installed :trollface:
+When done run this
+
+`$ go install github.com/radikh/kvatyr@latest`
+
+run default to serve current directory and port 8080
+
+`$ kvatyr`
+
+or specify a port and a directory
+
+`$ kvatyr --port=8090 /home/user/folder_to_share`
 
 
 # IF YOU DONT READ THIS NOTE - I'LL FIND YOU!!!!
