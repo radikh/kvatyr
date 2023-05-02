@@ -14,6 +14,7 @@ Cons:
 
 ### How to use 
 As of now no binaries are distributed, so you need to have go installed :trollface:
+
 When done run this
 
 `$ go install github.com/radikh/kvatyr@latest`
