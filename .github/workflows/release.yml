@@ -49,3 +49,13 @@ jobs:
           goarch: arm64
           compress_assets: FALSE
           asset_name: kvatyr-Mac-Apple-silicon
+          
+      - uses: wangyoucao577/go-release-action@v1.38
+        name: release windows/amd64
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          goos: windows
+          goarch: amd64
+          compress_assets: FALSE
+          asset_name: kvatyr-Windows-x86.exe
+
