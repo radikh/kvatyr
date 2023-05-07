@@ -13,20 +13,29 @@ Cons:
  - Primitive as dirt
 
 ### How to use 
-As of now no binaries are distributed, so you need to have go installed :trollface:
+Check the latest release and find an executable for you.
 
-When done run this
+#### For Mac and Linux
+Use terminal.
 
-`$ go install github.com/radikh/kvatyr@latest`
+Give the executable execution permissions:
 
-run default to serve current directory and port 8080
+```
+chmod u+x kvatyr-Linux-x86`
+```
 
-`$ kvatyr`
+Then you can run kvatyr with the default params. By default kvatyr runs on port 8080 and shares the directory it's called from.
+```
+./kvatyr-Linux-x86
+```
 
-or specify a port and a directory
+Or you can specify optional port and folder to share.
 
-`$ kvatyr --port=8090 /home/user/folder_to_share`
+`./kvatyr-Linux-x86 --port=8090 /home/user/folder_to_share`
 
+#### Fow windows
+
+I have no chance to test, so try to krun  somehow using cmd tool, sorry :trollface:
 
 # IF YOU DONT READ THIS NOTE - I'LL FIND YOU!!!!
 Security is important - so please read this text carefully.
