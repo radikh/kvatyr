@@ -57,5 +57,5 @@ jobs:
           goos: windows
           goarch: amd64
           compress_assets: FALSE
-          asset_name: kvatyr-Windows-x86.exe
+          asset_name: kvatyr-Windows-x86
 
