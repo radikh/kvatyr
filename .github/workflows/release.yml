@@ -21,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        name: checkout
+      
       - uses: wangyoucao577/go-release-action@v1.38
         name: release linux/amd64
         with:
@@ -30,9 +32,8 @@ jobs:
           compress_assets: FALSE
           asset_name: kvatyr-Linux-x86
 
-      - uses: actions/checkout@v3
       - uses: wangyoucao577/go-release-action@v1.38
-        name: release linux/amd64
+        name: release darwin/amd64
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           goos: darwin
@@ -40,9 +41,8 @@ jobs:
           compress_assets: FALSE
           asset_name: kvatyr-Mac-Intel
       
-      - uses: actions/checkout@v3
       - uses: wangyoucao577/go-release-action@v1.38
-        name: release linux/amd64
+        name: release darwin/arm64
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           goos: darwin
