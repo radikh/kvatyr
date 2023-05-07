@@ -2,11 +2,10 @@
 
 Primitive file sharing tool that also answers the eternal question "How to share files from Linux to Mac?"
 
-
 [![Go Reference](https://pkg.go.dev/badge/github.com/radikh/kvatyr.svg)](https://pkg.go.dev/github.com/radikh/kvatyr)
 
 Pros:
- - Easy install, easy remove
+ - Easy install, easy use, easy remove
  - No configs
  - No garbadge left in the system
  - Primitive as dirt
@@ -17,6 +16,13 @@ Cons:
  - Primitive as dirt
 
 ### How to use 
+
+#### Prerequisites
+
+- Browser installed on the target machine
+- Not being afraid of terminal
+- Optionally a lot of anger on the fact that there is not easy way to send files directly to Mac iOS machines :japanese_goblin:
+
 Check the latest release and find an executable for you.
 
 #### For Mac and Linux
@@ -39,9 +45,11 @@ Or you can specify optional port and folder to share.
 ./kvatyr-Linux-x86 --port=8090 /home/user/folder_to_share
 ```
 
+When app is started you will see a message with a link to access kvatyr
+
 #### Fow windows
 
-I have no chance to test, so try to krun  somehow using cmd tool, sorry :man_shrugging:
+I had no chance to test, so feel free to explore and update this section. Open source innit? :trollface:
 
 # IF YOU DONT READ THIS NOTE - I'LL FIND YOU!!!!
 Security is important - so please read this text carefully.
@@ -61,7 +69,7 @@ A: If you wish - do. I just needed something quick and simple for my home networ
 
 Q: How to use it if it's so insecure?
 
-A: I will not give recommendations but I have certain preconditions to run it. Run only on the network I control (normally home network or phone hotspot). The network should not have my hackerman neighbour to sniff your traffic. Run the tool not longer than needed. Don't leave the tool working on the background. Prepare a separate directory with the files share and run the tool only on that directory. And still it's not secure, you just need to accept some grade of risk.
+A: I will not give recommendations but I have certain preconditions to run it. Run only on the network I control (normally home network or phone hotspot). The network should not have my hackerman neighbor to sniff your traffic. Run the tool not longer than needed. Don't leave the tool working on the background. Prepare a separate directory with the files share and run the tool only on that directory. And still it's not secure, you just need to accept some grade of risk.
 
 
 Q: Will the tool be improved?
