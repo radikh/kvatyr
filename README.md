@@ -31,11 +31,13 @@ Then you can run kvatyr with the default params. By default kvatyr runs on port 
 
 Or you can specify optional port and folder to share.
 
-`./kvatyr-Linux-x86 --port=8090 /home/user/folder_to_share`
+```
+./kvatyr-Linux-x86 --port=8090 /home/user/folder_to_share
+```
 
 #### Fow windows
 
-I have no chance to test, so try to krun  somehow using cmd tool, sorry :trollface:
+I have no chance to test, so try to krun  somehow using cmd tool, sorry :man_shrugging:
 
 # IF YOU DONT READ THIS NOTE - I'LL FIND YOU!!!!
 Security is important - so please read this text carefully.
