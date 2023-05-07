@@ -36,5 +36,3 @@ jobs:
           goarch: amd64
           # Publish `.sha256` along with artifacts.
           sha256sum: TRUE # optional, default is FALSE
-          # Upload binaries to specified release page that indicated by release name.
-          release_name: linux_x86 # optional, default is 
