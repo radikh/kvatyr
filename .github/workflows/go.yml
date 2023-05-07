@@ -26,3 +26,14 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+  
+  realease:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: PackagrIO/action-releasr-go@v1.0.1
+        with:
+          # Commit Author
+          author_name: radikh # default is packagrio-bot
+          # Commit Author Email
+          author_email: 13639129+radikh@users.noreply.github.com
+          
