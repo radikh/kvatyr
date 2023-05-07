@@ -30,10 +30,14 @@ jobs:
   realease:
     runs-on: ubuntu-latest
     steps:
-      - uses: PackagrIO/action-releasr-go@v1.0.1
+      - uses: RomanosTrechlis/actions-go-release@v1.0
+        name: linux_x86 
         with:
-          # Commit Author
-          author_name: radikh # default is packagrio-bot
-          # Commit Author Email
-          author_email: 13639129+radikh@users.noreply.github.com
-          
+          # Release's name
+          release_name: linux_x86
+          # Go's target operating system
+          goos: linux
+          # Go's target architecture
+          goarch: amd64
+      
+      
