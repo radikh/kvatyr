@@ -17,17 +17,35 @@ jobs:
       run: go test -v ./...
   
   realease:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: wangyoucao577/go-release-action@v1.38
         name: release linux/amd64
         with:
-          # GITHUB_TOKEN for uploading releases to Github asserts.
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # GOOS is the running programs operating system target: one of darwin, freebsd, linux, and so on.
-          goos: linux # default is 
-          # GOARCH is the running programs architecture target: one of 386, amd64, arm, s390x, loong64 and so on.
+          goos: linux 
           goarch: amd64
-          # Publish `.sha256` along with artifacts.
-          sha256sum: TRUE # optional, default is FALSE
+          compress_assets: FALSE
+          asset_name: kvatyr-Linux-x86
+
+      - uses: actions/checkout@v3
+      - uses: wangyoucao577/go-release-action@v1.38
+        name: release linux/amd64
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          goos: darwin
+          goarch: amd64
+          compress_assets: FALSE
+          asset_name: kvatyr-Mac-Intel
+      
+      - uses: actions/checkout@v3
+      - uses: wangyoucao577/go-release-action@v1.38
+        name: release linux/amd64
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          goos: darwin
+          goarch: arm64
+          compress_assets: FALSE
+          asset_name: kvatyr-Mac-Apple-silicon
