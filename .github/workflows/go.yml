@@ -10,7 +10,6 @@ on:
     branches: [ "main" ]
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
     steps:
@@ -30,8 +29,9 @@ jobs:
   realease:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: wangyoucao577/go-release-action@v1.38
-        name: linux_x86
+        name: release linux/amd64
         with:
           # GITHUB_TOKEN for uploading releases to Github asserts.
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -43,4 +43,3 @@ jobs:
           sha256sum: TRUE # optional, default is FALSE
           # Upload binaries to specified release page that indicated by release name.
           release_name: linux_x86 # optional, default is 
-          project_path: .
