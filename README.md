@@ -1,4 +1,7 @@
 # kvatyr [:ukraine:](https://savelife.in.ua/en/donate-en/)
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/radikh/kvatyr.svg)](https://pkg.go.dev/github.com/radikh/kvatyr)
+
 Primitive file sharing tool that also answers the eternal question "How to share files from Linux to Mac?"
 
 Pros:
