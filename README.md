@@ -20,6 +20,7 @@ Cons:
 #### Prerequisites
 
 - Browser installed on the target machine
+- Both source and target machines are in the same local network, Wi-Fi etc.
 - Not being afraid of terminal
 - Optionally a lot of anger on the fact that there is not easy way to send files directly to Mac iOS machines :japanese_goblin:
 
@@ -45,7 +46,18 @@ Or you can specify optional port and folder to share.
 ./kvatyr-Linux-x86 --port=8090 /home/user/folder_to_share
 ```
 
-When app is started you will see a message with a link to access kvatyr
+When app is started you will see a message with a link to access kvatyr similar to
+
+```
+Serving files from /home/user/Downloads
+
+Available at:
+http://192.168.0.102:8080
+
+```
+This message means that you can open the link at any device in the same network and access the directory from browser.
+
+There may be more links if the app finds some more IP addresses on your device - just try them all. 
 
 #### Fow windows
 
