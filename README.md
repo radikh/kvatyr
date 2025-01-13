@@ -63,8 +63,8 @@ There may be more links if the app finds some more IP addresses on your device -
 
 I had no chance to test, so feel free to explore and update this section. Open source innit? :trollface:
 
-# IF YOU DONT READ THIS NOTE - I'LL FIND YOU!!!!
-Security is important - so please read this text carefully.
+
+#### Security is important - read before use
 
 The app allows to connect without authentication. It means that when you're on Wi-Fi everyone can get the access to the shared files, same for local network.
 
